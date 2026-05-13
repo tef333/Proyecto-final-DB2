@@ -1,13 +1,13 @@
-# Proyecto MongoDB NoSQL - Resenas y especificaciones flexibles
+# Nexus Marketplace - Base MongoDB NoSQL
 
-Este repositorio contiene el diseno documental y los scripts de una base de datos no relacional en MongoDB para almacenar informacion flexible o semiestructurada de productos:
+Este repositorio contiene el diseno documental y los scripts de la base de datos no relacional de **Nexus Marketplace** en MongoDB para almacenar informacion flexible o semiestructurada de productos:
 
 - Resenas y valoraciones de productos.
 - Comentarios de clientes.
 - Especificaciones tecnicas variables.
 - Caracteristicas adicionales por categoria.
 
-La base de datos propuesta se llama `tienda_nosql`.
+La base de datos propuesta se llama `nexus_marketplace_nosql`.
 
 ## Motor obligatorio
 
@@ -112,7 +112,7 @@ mongosh < scripts/04_agregaciones.mongodb.js
 Tambien puedes ejecutar un script especifico indicando la base:
 
 ```bash
-mongosh "mongodb://localhost:27017/tienda_nosql" scripts/03_consultas_complejas.mongodb.js
+mongosh "mongodb://localhost:27017/nexus_marketplace_nosql" scripts/03_consultas_complejas.mongodb.js
 ```
 
 ## Estructura
@@ -151,7 +151,6 @@ Para subirlo a GitHub:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/tienda-nosql-mongodb.git
+git remote add origin https://github.com/tef333/Proyecto-final-DB2.git
 git push -u origin main
 ```
-

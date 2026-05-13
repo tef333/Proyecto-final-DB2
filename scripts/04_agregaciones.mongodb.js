@@ -1,4 +1,4 @@
-use("tienda_nosql");
+use("nexus_marketplace_nosql");
 
 print("1. Promedio de calificacion y total de resenas por producto");
 printjson(
@@ -210,4 +210,3 @@ printjson(db.productos_flexibles.find({}, {
   resumenResenas: 1,
   ultimasResenas: 1
 }).toArray());
-

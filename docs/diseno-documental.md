@@ -1,8 +1,8 @@
-# Diseno documental MongoDB
+# Diseno documental MongoDB - Nexus Marketplace
 
 ## Contexto
 
-El proyecto requiere una base de datos no relacional con MongoDB para almacenar informacion flexible o semiestructurada. Esta informacion no encaja bien en tablas rigidas porque puede variar por tipo de producto y crecer dinamicamente.
+Nexus Marketplace requiere una base de datos no relacional con MongoDB para almacenar informacion flexible o semiestructurada. Esta informacion no encaja bien en tablas rigidas porque puede variar por tipo de producto y crecer dinamicamente.
 
 La base propuesta almacena:
 
@@ -13,7 +13,7 @@ La base propuesta almacena:
 
 ## Justificacion de uso de NoSQL
 
-MongoDB es adecuado para esta parte del sistema porque permite documentos con campos flexibles y arreglos internos. Esto evita crear muchas columnas nulas o tablas auxiliares para cada tipo de especificacion tecnica.
+MongoDB es adecuado para esta parte de Nexus Marketplace porque permite documentos con campos flexibles y arreglos internos. Esto evita crear muchas columnas nulas o tablas auxiliares para cada tipo de especificacion tecnica.
 
 Por ejemplo, un producto tipo celular puede tener `ram`, `almacenamiento`, `camaraMP` y `bateriaMah`, mientras que un monitor puede tener `resolucion`, `tasaRefrescoHz` y `tipoPanel`. En una base relacional, estas diferencias obligarian a crear tablas adicionales o una estructura entidad-atributo-valor mas compleja. En MongoDB se representan de forma natural como documentos.
 
@@ -142,7 +142,7 @@ db.resenas.createIndex({ etiquetas: 1 });
 db.resenas.createIndex({ comentario: "text", titulo: "text" });
 ```
 
-## Operaciones requeridas por el proyecto
+## Operaciones requeridas para Nexus Marketplace
 
 ### CRUD
 
@@ -171,4 +171,3 @@ El script `scripts/04_agregaciones.mongodb.js` incluye:
 - Top productos mejor valorados por categoria.
 - Etiquetas mas mencionadas en resenas.
 - Recalculo del resumen de resenas para actualizar el documento del producto.
-

@@ -1,4 +1,4 @@
-use("tienda_nosql");
+use("nexus_marketplace_nosql");
 
 db.productos_flexibles.drop();
 db.resenas.drop();
@@ -197,4 +197,4 @@ db.resenas.createIndex({ clienteId: 1, creadoEn: -1 });
 db.resenas.createIndex({ etiquetas: 1 });
 db.resenas.createIndex({ comentario: "text", titulo: "text" });
 
-print("Base tienda_nosql creada con colecciones, datos iniciales e indices.");
+print("Base nexus_marketplace_nosql creada para Nexus Marketplace con colecciones, datos iniciales e indices.");

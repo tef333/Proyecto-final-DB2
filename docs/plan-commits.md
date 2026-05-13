@@ -1,6 +1,6 @@
 # Plan de commits para GitHub
 
-La idea es que el repositorio evidencie el avance del proyecto en pasos claros.
+La idea es que el repositorio evidencie el avance de Nexus Marketplace en pasos claros.
 
 ## Commit 1
 
@@ -62,17 +62,16 @@ Contenido:
 Opcion con GitHub CLI:
 
 ```bash
-gh repo create tienda-nosql-mongodb --public --source=. --remote=origin --push
+gh repo create Proyecto-final-DB2 --public --source=. --remote=origin --push
 ```
 
 Opcion manual:
 
-1. Crear un repositorio vacio en GitHub llamado `tienda-nosql-mongodb`.
+1. Crear un repositorio vacio en GitHub llamado `Proyecto-final-DB2`.
 2. Ejecutar:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/tienda-nosql-mongodb.git
+git remote add origin https://github.com/tef333/Proyecto-final-DB2.git
 git push -u origin main
 ```
-

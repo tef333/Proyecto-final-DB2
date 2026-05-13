@@ -1,4 +1,4 @@
-use("tienda_nosql");
+use("nexus_marketplace_nosql");
 
 print("1. Celulares Xiaomi con minimo 8 GB de RAM y almacenamiento desde 128 GB");
 printjson(
@@ -87,4 +87,3 @@ printjson(
     especificaciones: 1
   }).toArray()
 );
-

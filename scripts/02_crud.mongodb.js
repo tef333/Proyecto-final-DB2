@@ -1,4 +1,4 @@
-use("tienda_nosql");
+use("nexus_marketplace_nosql");
 
 print("CREATE: insertar un producto flexible");
 db.productos_flexibles.insertOne({
