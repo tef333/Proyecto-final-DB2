@@ -62,16 +62,16 @@ Contenido:
 Opcion con GitHub CLI:
 
 ```bash
-gh repo create Proyecto-final-DB2 --public --source=. --remote=origin --push
+gh repo create Scripts-DB2 --public --source=. --remote=origin --push
 ```
 
 Opcion manual:
 
-1. Crear un repositorio vacio en GitHub llamado `Proyecto-final-DB2`.
+1. Crear un repositorio vacio en GitHub llamado `Scripts-DB2`.
 2. Ejecutar:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/tef333/Proyecto-final-DB2.git
+git remote add origin https://github.com/tef333/Scripts-DB2.git
 git push -u origin main
 ```

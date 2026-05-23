@@ -1,6 +1,13 @@
-# Nexus Marketplace - Proyecto Final Bases de Datos 2
+# Scripts DB2
 
-Este repositorio contiene los scripts y documentos de soporte para el proyecto final de **Nexus Marketplace**. Incluye una parte no relacional en MongoDB y una parte relacional/PLSQL en Oracle.
+Este repositorio contiene scripts y documentos de soporte para Bases de Datos 2.
+
+El contenido se divide en dos bloques academicos:
+
+- **Proyecto Nexus Marketplace**: proyecto final del curso, con base relacional en MySQL y base NoSQL en MongoDB.
+- **Ejercicios Oracle SQL y PL/SQL**: practicas independientes de clase sobre consultas, bloques anonimos, procedimientos, triggers, excepciones y taller ACID.
+
+## Proyecto Nexus Marketplace
 
 La base de datos no relacional en MongoDB almacena informacion flexible o semiestructurada de productos:
 
@@ -11,10 +18,11 @@ La base de datos no relacional en MongoDB almacena informacion flexible o semies
 
 La base de datos propuesta se llama `nexus_marketplace_nosql`.
 
-## Motores incluidos
+## Motores incluidos en el repositorio
 
-- MongoDB Community Server para la base NoSQL.
-- Oracle Database para scripts SQL y PL/SQL.
+- MySQL 8.x para el modelo relacional de Nexus Marketplace.
+- MongoDB Community Server para la base NoSQL de Nexus Marketplace.
+- Oracle Database para ejercicios academicos SQL y PL/SQL.
 
 ## Scripts Oracle SQL y PL/SQL
 
@@ -175,6 +183,6 @@ Para subirlo a GitHub:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/tef333/Proyecto-final-DB2.git
+git remote add origin https://github.com/tef333/Scripts-DB2.git
 git push -u origin main
 ```

@@ -1,8 +1,10 @@
-# Scripts Oracle SQL y PL/SQL
+# Ejercicios Oracle SQL y PL/SQL
 
 ## Objetivo
 
-Esta seccion documenta los scripts Oracle integrados al proyecto final de Nexus Marketplace. Estos archivos complementan la base NoSQL en MongoDB con practicas relacionales, consultas SQL, programacion PL/SQL, procedimientos almacenados, triggers, excepciones y manejo transaccional.
+Esta seccion documenta los ejercicios Oracle integrados al repositorio **Scripts DB2**. Estos archivos son practicas academicas independientes del proyecto Nexus Marketplace.
+
+El proyecto Nexus Marketplace usa MySQL para su modelo relacional y MongoDB para su modelo NoSQL. Oracle queda separado como material de ejercicios de Bases de Datos 2.
 
 Los scripts fueron integrados desde el repositorio:
 
@@ -119,9 +121,9 @@ Ejemplo con SQLcl o SQL*Plus:
 @scripts/oracle/05_taller_final/Taller_SLQ_1Estefania_Paredes_Santiago_Rojas.sql
 ```
 
-## Relacion con Nexus Marketplace
+## Relacion con el repositorio Scripts DB2
 
-La parte Oracle demuestra el componente relacional y transaccional de Bases de Datos 2. La parte MongoDB demuestra el componente NoSQL para informacion flexible.
+La parte Oracle demuestra ejercicios relacionales, procedurales y transaccionales de Bases de Datos 2. La parte Nexus Marketplace demuestra el proyecto final con MySQL y MongoDB.
 
 En conjunto, el repositorio evidencia:
 
@@ -131,4 +133,3 @@ En conjunto, el repositorio evidencia:
 - Manejo transaccional.
 - Diseno documental NoSQL.
 - CRUD, consultas complejas y agregaciones en MongoDB.
-
