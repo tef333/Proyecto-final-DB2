@@ -1,6 +1,8 @@
-# Nexus Marketplace - Base MongoDB NoSQL
+# Nexus Marketplace - Proyecto Final Bases de Datos 2
 
-Este repositorio contiene el diseno documental y los scripts de la base de datos no relacional de **Nexus Marketplace** en MongoDB para almacenar informacion flexible o semiestructurada de productos:
+Este repositorio contiene los scripts y documentos de soporte para el proyecto final de **Nexus Marketplace**. Incluye una parte no relacional en MongoDB y una parte relacional/PLSQL en Oracle.
+
+La base de datos no relacional en MongoDB almacena informacion flexible o semiestructurada de productos:
 
 - Resenas y valoraciones de productos.
 - Comentarios de clientes.
@@ -9,9 +11,24 @@ Este repositorio contiene el diseno documental y los scripts de la base de datos
 
 La base de datos propuesta se llama `nexus_marketplace_nosql`.
 
-## Motor obligatorio
+## Motores incluidos
 
-MongoDB Community Server.
+- MongoDB Community Server para la base NoSQL.
+- Oracle Database para scripts SQL y PL/SQL.
+
+## Scripts Oracle SQL y PL/SQL
+
+Los scripts Oracle se encuentran en `scripts/oracle/` y fueron integrados desde el repositorio `tef333/oracle-sql-scripts`.
+
+Incluyen:
+
+- Consultas SQL sobre esquema HR: joins, agrupaciones, filtros, funciones y jerarquias.
+- Bloques anonimos PL/SQL: variables, ciclos, condicionales y cursores.
+- Procedimientos almacenados y permisos.
+- Triggers DML y manejo de excepciones.
+- Taller final con ajuste salarial, validaciones, auditoria, savepoint y enfoque ACID.
+
+Guia documental: `docs/oracle-sql-plsql.md`.
 
 ## Patrones de diseno seleccionados
 
@@ -98,7 +115,7 @@ Prueba la conexion:
 mongosh
 ```
 
-## Ejecucion de scripts
+## Ejecucion de scripts MongoDB
 
 Desde la carpeta del proyecto:
 
@@ -122,8 +139,15 @@ mongosh "mongodb://localhost:27017/nexus_marketplace_nosql" scripts/03_consultas
 |-- README.md
 |-- docs/
 |   |-- diseno-documental.md
+|   |-- oracle-sql-plsql.md
 |   `-- plan-commits.md
 `-- scripts/
+    |-- oracle/
+    |   |-- 01_consultas_sql/
+    |   |-- 02_plsql_anonimos/
+    |   |-- 03_procedimientos/
+    |   |-- 04_triggers_excepciones/
+    |   `-- 05_taller_final/
     |-- 01_setup.mongodb.js
     |-- 02_crud.mongodb.js
     |-- 03_consultas_complejas.mongodb.js
